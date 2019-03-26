@@ -9,12 +9,12 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       { from: "../package.json", to: BUILD_PATH },
-      { from: "../LICENSE", to: BUILD_PATH }
-    ])
+      { from: "../LICENSE", to: BUILD_PATH },
+    ]),
   ],
   output: {
     path: BUILD_PATH,
     library: "scrivito-youtube-video-widget",
-    libraryTarget: "umd"
-  }
+    libraryTarget: "umd",
+  },
 };
