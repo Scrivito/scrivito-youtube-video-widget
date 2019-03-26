@@ -1,0 +1,8 @@
+{
+  "name": "scrivito-youtube-video-widget",
+  "version": "0.1.0",
+  "description": "A Scrivito widget that plays videos from YouTube.",
+  "main": "index.js",
+  "author": "Infopark AG",
+  "license": "MIT"
+}
