@@ -3,12 +3,18 @@ const path = require("path");
 const webpack = require("webpack");
 
 const NODE_ENV = process.env.NODE_ENV || "production";
+const SRC_PATH = path.join(__dirname, "src");
 const BUILD_PATH = path.resolve(__dirname, "build");
 
 module.exports = {
   mode: NODE_ENV,
-  context: path.join(__dirname, "src"),
+  context: SRC_PATH,
   entry: { index: "./index" },
+  output: {
+    path: BUILD_PATH,
+    library: "scrivito-youtube-video-widget",
+    libraryTarget: "umd",
+  },
   plugins: [
     new webpack.DefinePlugin({
       "process.env": { NODE_ENV: JSON.stringify(NODE_ENV) },
@@ -18,9 +24,35 @@ module.exports = {
       { from: "../LICENSE", to: BUILD_PATH },
     ]),
   ],
-  output: {
-    path: BUILD_PATH,
-    library: "scrivito-youtube-video-widget",
-    libraryTarget: "umd",
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        include: [SRC_PATH],
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: [
+                "@babel/preset-react",
+                [
+                  "@babel/preset-env",
+                  {
+                    debug: false,
+                    modules: false,
+                    shippedProposals: false,
+                    useBuiltIns: false,
+                    targets: {
+                      browsers: ["Chrome >= 41", "last 2 versions"],
+                    },
+                  },
+                ],
+              ],
+              cacheDirectory: "tmp/babel-cache",
+            },
+          },
+        ],
+      },
+    ],
   },
 };
