@@ -36,7 +36,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p",
-    "watch": "cross-env NODE_ENV=development webpack --watch",
+    "start": "cross-env NODE_ENV=development webpack --watch",
     "eslint": "eslint --max-warnings 1 src/",
     "es-check": "npm run build && es-check es5 './build/**/*.js'"
   }
