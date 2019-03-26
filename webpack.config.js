@@ -27,6 +27,7 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: "../package.json", to: BUILD_PATH },
       { from: "../LICENSE", to: BUILD_PATH },
+      { from: "**/*.css", to: BUILD_PATH },
     ]),
   ],
   module: {
