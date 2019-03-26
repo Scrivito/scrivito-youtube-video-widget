@@ -13,6 +13,7 @@
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.2",
     "cross-env": "^5.2.0",
+    "es-check": "^5.0.0",
     "prettier": "^1.16.4",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
@@ -22,6 +23,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p",
-    "watch": "cross-env NODE_ENV=development webpack --watch"
+    "watch": "cross-env NODE_ENV=development webpack --watch",
+    "es-check": "npm run build && es-check es5 './build/**/*.js'"
   }
 }
