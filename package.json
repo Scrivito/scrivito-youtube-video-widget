@@ -1,10 +1,19 @@
 {
-  "name": "scrivito-youtube-video-widget",
+  "name": "@apepper/scrivito-youtube-video-widget",
   "version": "0.1.0",
   "description": "A Scrivito widget that plays videos from YouTube.",
   "main": "index.js",
   "author": "Infopark AG",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apepper/scrivito-youtube-video-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apepper/scrivito-youtube-video-widget/issues"
+  },
+  "homepage": "https://github.com/apepper/scrivito-youtube-video-widget#readme",
+  "dependencies": {},
   "peerDependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
