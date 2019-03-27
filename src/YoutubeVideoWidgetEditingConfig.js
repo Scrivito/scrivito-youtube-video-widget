@@ -1,7 +1,9 @@
 import * as Scrivito from "scrivito";
+import thumbnail from "./YoutubeVideoWidgetThumbnail.svg";
 
 Scrivito.provideEditingConfig("YoutubeVideoWidget", {
   title: "YouTube Video",
+  thumbnail,
   attributes: {
     youtubeVideoId: {
       title: "YouTube video ID",

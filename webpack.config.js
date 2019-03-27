@@ -63,6 +63,10 @@ module.exports = (env, argv) => {
             },
           ],
         },
+        {
+          test: /\.(svg|gif)$/,
+          use: ["url-loader"],
+        },
       ],
     },
   };
