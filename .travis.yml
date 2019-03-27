@@ -1,0 +1,12 @@
+---
+language: node_js
+node_js: 8
+cache:
+  directories:
+    - "node_modules"
+env:
+  matrix:
+    - TASK: "build"
+    - TASK: "eslint"
+    - TASK: "es-check"
+script: npm run $TASK
