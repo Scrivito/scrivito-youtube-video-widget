@@ -1,5 +1,7 @@
 # Scrivito Youtube Video Widget
 
+[![CMS: Scrivito](https://img.shields.io/badge/CMS-Scrivito-brightgreen.svg)](https://scrivito.com) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Travis build status](https://travis-ci.org/apepper/scrivito-youtube-video-widget.svg?branch=master)](https://travis-ci.org/apepper/scrivito-youtube-video-widget) [![GitHub last commit](https://img.shields.io/github/last-commit/apepper/scrivito-youtube-video-widget.svg)](https://github.com/apepper/scrivito-youtube-video-widget) [![GitHub top language](https://img.shields.io/github/languages/top/apepper/scrivito-youtube-video-widget.svg)](https://github.com/apepper/scrivito-youtube-video-widget)
+
 A Scrivito widget that plays videos from [YouTube](https://www.youtube.com/).
 
 ## Installation
