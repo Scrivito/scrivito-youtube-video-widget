@@ -12,8 +12,9 @@ const PEER_DEPENDENCIES = require("./package.json").peerDependencies;
 module.exports = (env, argv) => {
   const plugins = [
     new CopyWebpackPlugin([
-      { from: "../package.json", to: BUILD_PATH },
       { from: "../LICENSE", to: BUILD_PATH },
+      { from: "../package.json", to: BUILD_PATH },
+      { from: "../readme.mdown", to: BUILD_PATH },
       { from: "**/*.css", to: BUILD_PATH },
     ]),
   ];
