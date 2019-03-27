@@ -17,7 +17,6 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "copy-webpack-plugin": "^5.0.2",
-    "cross-env": "^5.2.0",
     "es-check": "^5.0.0",
     "eslint": "^5.15.3",
     "eslint-config-airbnb": "^17.1.0",
@@ -35,8 +34,8 @@
     "webpack-cli": "^3.3.0"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack -p",
-    "start": "cross-env NODE_ENV=development webpack --watch",
+    "build": "webpack -p --mode production",
+    "start": "webpack --watch --mode development",
     "eslint": "eslint --max-warnings 1 src/",
     "es-check": "npm run build && es-check es5 './build/**/*.js'"
   }
