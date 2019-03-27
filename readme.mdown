@@ -1,22 +1,28 @@
 # Scrivito Youtube Video Widget
 
-A Scrivito widget that plays videos from YouTube.
+A Scrivito widget that plays videos from [YouTube](https://www.youtube.com/).
 
 ## Installation
 
-In your scrivito app:
+Install the package in your scrivito app:
 
 ```
 npm install scrivito-youtube-video-widget
 ```
 
-After that add the following to your `index.js` (or `Widgets/index.js`):
+Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`):
 
 ```js
 import "scrivito-youtube-video-widget";
 ```
 
-and the following to you style-sheets (e.g. `index.scss`):
+Also add the styling of the widget to your app. This can be done by either loading it via `css-loader` (e.g. in `index.js` or `Widgets/index.js`):
+
+```
+import "scrivito-youtube-video-widget/index.css";
+```
+
+Or by including the styling to your style sheets (e.g. in `index.scss`):
 
 ```scss
 @import "~scrivito-youtube-video-widget/index.css";
