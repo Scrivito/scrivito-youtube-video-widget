@@ -1,59 +1,51 @@
 # Scrivito Youtube Video Widget
 
-[![CMS: Scrivito](https://img.shields.io/badge/CMS-Scrivito-brightgreen.svg)](https://scrivito.com) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Travis build status](https://travis-ci.org/apepper/scrivito-youtube-video-widget.svg?branch=master)](https://travis-ci.org/apepper/scrivito-youtube-video-widget) [![GitHub last commit](https://img.shields.io/github/last-commit/apepper/scrivito-youtube-video-widget.svg)](https://github.com/apepper/scrivito-youtube-video-widget) [![GitHub top language](https://img.shields.io/github/languages/top/apepper/scrivito-youtube-video-widget.svg)](https://github.com/apepper/scrivito-youtube-video-widget)
+[![CMS: Scrivito](https://img.shields.io/badge/CMS-Scrivito-brightgreen.svg)](https://scrivito.com) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) 
 
 A Scrivito widget that plays videos from [YouTube](https://www.youtube.com/).
+
+## Screenshot
+
+![screenshot](https://raw.githubusercontent.com/apepper/scrivito-youtube-video-widget/master/youtube-widget-screenshot.png)
 
 ## Installation
 
 Install the package in your scrivito app:
 
-```
-npm install @apepper/scrivito-youtube-video-widget
+```shell
+$ npm install @apepper/scrivito-youtube-video-widget
 ```
 
-Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`):
+Import the widget in your javascript (e.g. in `src/index.js` or `src/Widgets/index.js`):
 
 ```js
 import "@apepper/scrivito-youtube-video-widget";
 ```
 
-Also add the styling of the widget to your app. This can be done by either loading it via `css-loader` (e.g. in `index.js` or `Widgets/index.js`):
+Add the styling of the widget to your app. 
+This can be done by either loading it via `css-loader` (e.g. in `src/index.js` or `src/Widgets/index.js`):
 
-```
+```js
 import "@apepper/scrivito-youtube-video-widget/index.css";
 ```
 
-Or by including the styling to your style sheets (e.g. in `index.scss`):
+ Or by including the styling to your stylesheets (e.g. in `src/assets/stylesheets/index.scss`):
 
 ```scss
 @import "~@apepper/scrivito-youtube-video-widget/index.css";
 ```
 
-## Development
-
-With `npm run build` you can build the package into `build/`.
-
-With `npm start` you'll start a continues process, that rebuilds `build/` automatically once the source code is changed.
-
-To add this library locally do the following in your scrivito app:
-
-```
-npm install file:<path to build folder>
-```
-
-e.g.
-
-```
-npm install file:../scrivito-youtube-video-widget/build/
-```
-
-To publish the package:
-
-```
-npm i && npm run build && cd build/ && npm publish
-```
+## Widget Configuration
+In the widget properties you can set:
+- YouTube video ID
+- Aspect ratio
 
 ## Check code quality
 
-With `npm run eslint` and `npm run es-check` you can check your coding quality.
+```shell
+$ npm run eslint
+```
+and
+```shell
+$ npm run es-check
+```
