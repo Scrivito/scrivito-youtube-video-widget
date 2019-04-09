@@ -9,6 +9,12 @@
     "type": "git",
     "url": "git+https://github.com/apepper/scrivito-youtube-video-widget.git"
   },
+  "keywords": [
+    "scrivito",
+    "widgets",
+    "react",
+    "react-CMS"
+  ],
   "bugs": {
     "url": "https://github.com/apepper/scrivito-youtube-video-widget/issues"
   },
