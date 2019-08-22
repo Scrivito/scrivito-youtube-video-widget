@@ -1,38 +1,38 @@
 # Scrivito Youtube Video Widget
 
-[![CMS: Scrivito](https://img.shields.io/badge/CMS-Scrivito-brightgreen.svg)](https://scrivito.com) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Travis build status](https://travis-ci.org/apepper/scrivito-youtube-video-widget.svg?branch=master)](https://travis-ci.org/apepper/scrivito-youtube-video-widget) [![GitHub last commit](https://img.shields.io/github/last-commit/apepper/scrivito-youtube-video-widget.svg)](https://github.com/apepper/scrivito-youtube-video-widget) [![GitHub top language](https://img.shields.io/github/languages/top/apepper/scrivito-youtube-video-widget.svg)](https://github.com/apepper/scrivito-youtube-video-widget)
+[![CMS: Scrivito](https://img.shields.io/badge/CMS-Scrivito-brightgreen.svg)](https://scrivito.com) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Travis build status](https://travis-ci.org/scrivito/scrivito-youtube-video-widget.svg?branch=master)](https://travis-ci.org/scrivito/scrivito-youtube-video-widget) [![GitHub last commit](https://img.shields.io/github/last-commit/scrivito/scrivito-youtube-video-widget.svg)](https://github.com/scrivito/scrivito-youtube-video-widget) [![GitHub top language](https://img.shields.io/github/languages/top/scrivito/scrivito-youtube-video-widget.svg)](https://github.com/scrivito/scrivito-youtube-video-widget)
 
 A Scrivito widget that plays videos from [YouTube](https://www.youtube.com/).
 
 ## Screenshot
 
-![screenshot](https://raw.githubusercontent.com/apepper/scrivito-youtube-video-widget/master/youtube-widget-screenshot.png)
+![screenshot](https://raw.githubusercontent.com/scrivito/scrivito-youtube-video-widget/master/youtube-widget-screenshot.png)
 
 ## Installation
 
 Install the package in your scrivito app:
 
 ```shell
-$ npm install @apepper/scrivito-youtube-video-widget
+$ npm install scrivito-youtube-video-widget
 ```
 
 Import the widget in your javascript (e.g. in `src/index.js` or `src/Widgets/index.js`):
 
 ```js
-import "@apepper/scrivito-youtube-video-widget";
+import "scrivito-youtube-video-widget";
 ```
 
 Add the styling of the widget to your app. 
 This can be done by either loading it via `css-loader` (e.g. in `src/index.js` or `src/Widgets/index.js`):
 
 ```js
-import "@apepper/scrivito-youtube-video-widget/index.css";
+import "scrivito-youtube-video-widget/index.css";
 ```
 
  Or by including the styling to your stylesheets (e.g. in `src/assets/stylesheets/index.scss`):
 
 ```scss
-@import "~@apepper/scrivito-youtube-video-widget/index.css";
+@import "~scrivito-youtube-video-widget/index.css";
 ```
 
 ## Widget Configuration
