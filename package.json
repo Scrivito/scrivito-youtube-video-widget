@@ -31,7 +31,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^2.0.2",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
     "es-check": "^5.0.0",
     "eslint": "^5.16.0",
@@ -46,7 +46,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "scrivito": "^1.8.0",
-    "url-loader": "^1.1.2",
+    "url-loader": "^2.1.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
   },
