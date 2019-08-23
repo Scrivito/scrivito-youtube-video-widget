@@ -1,15 +1,17 @@
+/* eslint-disable import/no-nodejs-modules */
+/* eslint-disable import/no-commonjs */
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
-const webpack = require("webpack");
+const packageJson = require("./package.json");
 
 const SRC_PATH = path.join(__dirname, "src");
 const BUILD_PATH = path.resolve(__dirname, "build");
 
-const DEPENDENCIES = require("./package.json").dependencies || {};
-const PEER_DEPENDENCIES = require("./package.json").peerDependencies;
+const PEER_DEPENDENCIES = packageJson.peerDependencies;
+const DEPENDENCIES = packageJson.dependencies || {};
 
-module.exports = (env, argv) => {
+module.exports = (_env, argv) => {
   const plugins = [
     new CopyWebpackPlugin([
       { from: "../LICENSE", to: BUILD_PATH },

@@ -21,9 +21,9 @@ Scrivito.provideComponent("YoutubeVideoWidget", ({ widget }) => {
     >
       <iframe
         src={`https://www.youtube.com/embed/${youtubeVideoId}`}
-        className="youtube-fullsize-iframe"
+        className="youtube-video-widget--fullsize-iframe"
         frameBorder="0"
-        allow="autoplay; encrypted-media"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         webkitallowfullscreen="true"
         mozallowfullscreen="true"

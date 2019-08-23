@@ -1,6 +1,6 @@
 import * as Scrivito from "scrivito";
 
-const YoutubeVideoWidget = Scrivito.provideWidgetClass("YoutubeVideoWidget", {
+Scrivito.provideWidgetClass("YoutubeVideoWidget", {
   attributes: {
     youtubeVideoId: "string",
     aspectRatio: [
@@ -9,5 +9,3 @@ const YoutubeVideoWidget = Scrivito.provideWidgetClass("YoutubeVideoWidget", {
     ],
   },
 });
-
-export default YoutubeVideoWidget;
