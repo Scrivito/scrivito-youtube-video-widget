@@ -32,7 +32,7 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.0.4",
+    "copy-webpack-plugin": "^5.1.1",
     "es-check": "^5.0.0",
     "eslint": "^6.2.1",
     "eslint-config-airbnb": "^18.0.1",
@@ -47,9 +47,9 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "scrivito": "^1.9.1",
-    "url-loader": "^2.1.0",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7"
+    "url-loader": "^2.3.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "scripts": {
     "build": "webpack -p --mode production",
